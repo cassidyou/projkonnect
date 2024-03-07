@@ -280,7 +280,7 @@ header{
 
 
 .header1{
-    height: 115vh;
+    height: auto;
     position: relative;
 }
 
@@ -379,7 +379,7 @@ header{
     margin-left: auto;
     margin-right: auto;
     line-height: 1.1;
-    font-size: 75px;
+    font-size: 60px;
     margin-bottom: 20px;
 }
 
@@ -1316,3 +1316,56 @@ section#team .ab-title{
     color: var(--black);
     text-decoration: none;
 }
+
+
+.plyr__sr-only {
+    clip: rect(1px,1px,1px,1px);
+    border: 0!important;
+    height: 1px!important;
+    overflow: hidden;
+    padding: 0!important;
+    position: absolute!important;
+    width: 1px!important;
+}
+
+button.plyr__control.plyr__control--overlaid
+{
+    background: var(--white-color);
+}
+
+.plyr__control svg {
+    fill: #00b2ff;
+}
+
+.plyr__poster {
+    object-fit: cover;
+    background-size: cover;
+}
+
+.plyr{
+    height: 100%;
+}
+
+.plyr video{
+    width: 123%;
+}
+
+.progress-bar {
+    position: absolute;
+    height: 5px;
+    width: 100%;
+    bottom: -5px;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.progress-bar .progress {
+    height: 100%;
+    background: var(--primary-color);
+    border-radius: 0;
+    width: 0;
+    transition: linear 0.3s;
+}
+

@@ -31,7 +31,8 @@ $(document).ready(function () {
 
 
 
-
+//animation on scroll instance
+AOS.init();
 
 
 
@@ -55,10 +56,6 @@ $(document).ready(function () {
     $(this).siblings('.rlf-hd-hide').removeClass('d-none');
     $(this).addClass('d-none');
   });
-
-
-
-
 
 });
 
