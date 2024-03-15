@@ -1179,9 +1179,43 @@ section#team .ab-title{
 
 
 /******************************* AUTH PAGES  *****************************/
+.auth-container{
+    height: 100vh;
+    overflow: hidden;
+}
+
+.auth-bg{
+    height: 100vh;
+    position: relative;
+}
+
+.auth-bg img{
+    width: auto;
+    height: 100%;
+}
+
+.auth-img-overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
 .auth-ctn{
     margin-top: 50px;
+    height: 100vh;
 }
+
+.auth-form-container{
+    height: 100vh;
+    overflow-y: scroll;
+}
+
+.auth-form-container::-webkit-scrollbar
+ {
+    width: 0px;
+}
+
 .auth-logo{
     width: 250px;
     margin-bottom: 20px;
@@ -1192,6 +1226,8 @@ section#team .ab-title{
     border-radius: 7px;
     padding: 30px;
 }
+
+
 
 .auth-heading{
     font-family: var(--font-family-bold);

@@ -21,6 +21,7 @@
 
      <!-- Swiper CSS -->
      <link rel="stylesheet" href="vendor/swiper/swiper-bundle.min.css">
+     <link rel="stylesheet" href="asset/css/aos.css">
 
      <!--Custom CSS-->
      <link rel="stylesheet" href="asset/css/style.css">
@@ -29,65 +30,103 @@
 
 <body>
      <div class="page-wrapper">
-          <div class="container-fluid">
+          <div class="auth-container">
                <div class="row">
-                    <div class="col-lg-4 col-md-3 col-sm-2"></div>
-                    <div class="col-lg-4 col-md-6 col-sm-8">
-                         <div class="auth-ctn">
-                              <div class="text-center mb-3">
-                                   <img src="asset/img/logo-dark.png" class="auth-logo" alt="logo">
+                    <div class="col-lg-6" data-aos="fade-left">
+                         <div class="row">
+                              <div class="col-sm-2 col-md-3 col-lg-1 col-xl-2 col-1"></div>
+                              <div class="col-sm-8 col-md-6 col-lg-10 col-xl-8 col-10 auth-form-container">
+                                   <div class="auth-ctn">
+                                        <div class="text-center mb-3">
+                                             <img src="asset/img/logo-dark.png" class="auth-logo" alt="logo">
+                                        </div>
+          
+                                        <form action="" class="auth-form">
+                                             <h3 class="text-center auth-heading">Sign Up</h3>
+                                             <p class="text-center auth-sub-heading mb-4">
+                                                  Explore the world of endless learning with ProjKonnect
+                                             </p>
+                                             <div class="reg-tab">
+                                                  <div class="mb-4">
+                                                       <div class="form-group">
+                                                            <input type="text" name="full-name" placeholder="Full Name"
+                                                                 class="form-control">
+                                                       </div>
+                                                  </div>
+                                                  <div class="mb-4">
+                                                       <div class="form-group">
+                                                            <input type="password" name="password" placeholder="Password"
+                                                                 class="form-control">
+                                                       </div>
+                                                  </div>
+                                                  <div class="mb-4">
+                                                       <div class="form-group">
+                                                            <input type="password" name="password" placeholder="Confirm password"
+                                                                 class="form-control">
+                                                       </div>
+                                                  </div>
+                                                  <p class="terms-text">
+                                                       <span>By creating an account, you acknowledge you have read and agree to our</span> <a href="privacy.html" target="_blank">Terms of use and Privacy Policy.</span>
+                                                  </p>
+                                                  <a href="javascript:;" class="btn crt-btn auth-btn mt-4">Create account</a>
+                                             </div>
+                                             <div class="reg-tab" style="display: none;">
+                                                  <div class="d-flex align-items-center justify-content-between mb-4 mt-5">
+                                                       <div class="d-flex align-items-center justify-content-start gap-2">
+                                                            <div
+                                                                 class="form-check custom-checkbox checkbox-success check-lg">
+                                                                 <input type="radio" class="form-check-input" name="role" checked
+                                                                      id="customCheckBox8">
+                                                                 <label class="form-check-label"
+                                                                      for="customCheckBox8"><b>Student</b></label>
+                                                            </div>
+                                                       </div>
+                                                       <div class="d-flex align-items-center justify-content-start gap-2">
+                                                            <div
+                                                                 class="form-check custom-checkbox checkbox-success check-lg">
+                                                                 <input type="radio" class="form-check-input" name="role"
+                                                                      id="customCheckBox8">
+                                                                 <label class="form-check-label"
+                                                                      for="customCheckBox8"><b>Proguide</b></label>
+                                                            </div>
+                                                       </div>
+                                                  </div>
+                                                  <div class="mb-4">
+                                                       <div class="form-group">
+                                                            <input type="text" name="email" placeholder="Email address"
+                                                                 class="form-control">
+                                                       </div>
+                                                  </div>
+                                                  <p class="terms-text">
+                                                       <span>By creating an account, you acknowledge you have read and agree to our</span> <a href="privacy.html" target="_blank">Terms of use and Privacy Policy.</span>
+                                                  </p>
+                                                  <a href="email-verification.html" class="btn auth-btn mt-4">Continue with Email</a>
+                                             </div>
+                                        </form>
+                                        <div style="padding: 30px; margin-bottom: 50px;">
+                                             <fieldset>
+                                                  <legend><span>&nbsp; or &nbsp;</span></legend>
+                                             </fieldset>
+                                             <button class="btn custom-btn-outline">
+                                                  <span>
+                                                  <img src="asset/img/google-icon.png" class="img-fluid">&nbsp; &nbsp; Continue with
+                                                  Google
+                                                  </span>
+                                             </button>
+                                             <div class="new-account-ctn"><span>Already have an account?</span> <a href="login.html">Login</a></div>
+                                        </div>
+                                   </div>
                               </div>
+                              <div class="col-sm-2 col-md-3 col-lg-1 col-xl-2 col-1"></div>
+                         </div>
 
-                              <form action="" class="auth-form">
-                                   <h3 class="text-center auth-heading">Sign Up</h3>
-                                   <p class="text-center auth-sub-heading mb-4">
-                                        Explore the world of endless learning with ProjKonnect
-                                   </p>
-                                   <div class="mb-4">
-                                        <div class="form-group">
-                                             <input type="text" name="email" placeholder="Full Name"
-                                                  class="form-control">
-                                        </div>
-                                   </div>
-                                   <div class="mb-4">
-                                        <div class="form-group">
-                                             <input type="text" name="email" placeholder="Email address"
-                                                  class="form-control">
-                                        </div>
-                                   </div>
-                                   <div class="mb-4">
-                                        <div class="form-group">
-                                             <input type="password" name="password" placeholder="Password"
-                                                  class="form-control">
-                                        </div>
-                                   </div>
-                                   <div class="mb-4">
-                                        <div class="form-group">
-                                             <input type="password" name="password" placeholder="Confirm password"
-                                                  class="form-control">
-                                        </div>
-                                   </div>
-                                   <p class="terms-text">
-                                        <span>By creating an account, you acknowledge you have read and agree to our</span> <a href="privacy.html" target="_blank">Terms of use and Privacy Policy.</span>
-                                   </p>
-                                   <a href="index.html" class="btn auth-btn mt-4">Create account</a>
-                              </form>
-                              <div style="padding: 30px; margin-bottom: 50px;">
-                                   <fieldset>
-                                        <legend><span>&nbsp; or &nbsp;</span></legend>
-                                   </fieldset>
-                                   <button class="btn custom-btn-outline">
-                                        <span>
-                                        <img src="asset/img/google-icon.png" class="img-fluid">&nbsp; &nbsp; Continue with
-                                        Google
-                                        </span>
-                                   </button>
-                                   <div class="new-account-ctn"><span>Already have an account?</span> <a href="login.html">Login</a></div>
-                              </div>
+                    </div>
+                    <div class="col-lg-6 d-none d-lg-block" data-aos="fade-down">
+                         <div class="auth-bg">
+                              <div class="auth-img-overlay"></div>
+                              <img src="asset/img/sign-up-bg.jpg"  alt="">
                          </div>
                     </div>
-                    <div class="col-lg-4 col-md-3 col-sm-2"></div>
-
                </div>
           </div>
      </div>
@@ -102,9 +141,17 @@
      <script src="vendor/fontawesome/all.min.js"></script>
      <script src="vendor/jquery-validate/jquery.validate.js"></script>
      <script src="vendor/swiper/swiper-bundle.min.js"></script>
+     <script src="asset/js/aos.js"></script>
      <script src="asset/js/plugins_init.js"></script>
      <script src="asset/js/main.js"></script>
 
+     <script>
+          $(document).ready(function(){
+               $('.crt-btn').on('click', function(){
+                    $(this).parent('.reg-tab').fadeOut();
+                    $(this).parent('.reg-tab').siblings('.reg-tab').delay(300).fadeIn();
+               });
+          })
+     </script>
 </body>
-
 </html>

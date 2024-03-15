@@ -390,6 +390,10 @@
           flex-direction: column!important;
           gap: 10px;
       }
+
+      .auth-ctn .custom-btn-outline {
+        font-size: 14px;
+    }
 }
 
 
