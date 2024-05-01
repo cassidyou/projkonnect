@@ -15,7 +15,8 @@
     --primary-color-100: #190C20;
     --black-color: #000000;
     --white-color: #ffffff;
-    --gray-color: #FAF5F6;
+    /* --gray-color: #FAF5F6; */
+    --gray-color: #fcfcfc;
     --orange-color: #FFA000;
 
     --box-shadow: 0 0.5rem 5rem rgba(0, 0, 0, 0.15);
