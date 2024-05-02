@@ -5,7 +5,7 @@
      <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <title>ProjKonnect - Register</title>
-     <link rel="shortcut icon" type="text/css" href="asset/img/favicon.ico">
+     <link rel="shortcut icon" type="text/css" href="asset/img/favicon.png">
 
      <!-- Bootstrap CSS -->
      <link rel="stylesheet" href="vendor/bootstrap/bootstrap.min.css">
@@ -55,23 +55,30 @@
                                                   </div>
                                                   <div class="mb-4">
                                                        <div class="form-group">
-                                                            <input type="password" name="password" placeholder="Password"
+                                                            <input type="text" name="email" placeholder="Email address"
                                                                  class="form-control">
                                                        </div>
                                                   </div>
-                                                  <div class="mb-4">
-                                                       <div class="form-group">
-                                                            <input type="password" name="password" placeholder="Confirm password"
-                                                                 class="form-control">
-                                                       </div>
-                                                  </div>
+                                                 
                                                   <p class="terms-text">
                                                        <span>By creating an account, you acknowledge you have read and agree to our</span> <a href="privacy.html" target="_blank">Terms of use and Privacy Policy.</span>
                                                   </p>
-                                                  <a href="javascript:;" class="btn crt-btn auth-btn mt-4">Create account</a>
+                                                  <a href="javascript:;" class="btn crt-btn auth-btn mt-4">Continue with Email</a>
+                                                  <div style="padding: 30px; margin-bottom: 50px;">
+                                                       <fieldset>
+                                                            <legend><span>&nbsp; or &nbsp;</span></legend>
+                                                       </fieldset>
+                                                       <button class="btn custom-btn-outline">
+                                                            <span>
+                                                            <img src="asset/img/google-icon.png" class="img-fluid">&nbsp; &nbsp; Continue with
+                                                            Google
+                                                            </span>
+                                                       </button>
+                                                       <div class="new-account-ctn"><span>Already have an account?</span> <a href="login.html">Login</a></div>
+                                                  </div>
                                              </div>
                                              <div class="reg-tab" style="display: none;">
-                                                  <div class="d-flex align-items-center justify-content-between mb-4 mt-5">
+                                                  <!-- <div class="d-flex align-items-center justify-content-between mb-4 mt-5">
                                                        <div class="d-flex align-items-center justify-content-start gap-2">
                                                             <div
                                                                  class="form-check custom-checkbox checkbox-success check-lg">
@@ -90,31 +97,41 @@
                                                                       for="customCheckBox9"><b>Proguide</b></label>
                                                             </div>
                                                        </div>
+                                                  </div> -->
+                                                  <div class="form-group position-relative overflow-hidden mb-4">
+                                                       <label for="student" class="reg-user-label active"> Student
+                                                            <input type="radio" class="reg-user-type" value="student" name="user-type" id="student">
+                                                       </label>
+                                                  </div>
+                                                  <div class="form-group position-relative overflow-hidden mb-4">
+                                                       <label for="proguide" class="reg-user-label"> Proguide
+                                                            <input type="radio" class="reg-user-type" value="proguide" name="user-type" id="proguide">
+                                                       </label>
+                                                  </div>
+                                                  <div class="form-group position-relative overflow-hidden mb-4">
+                                                       <label for="employer" class="reg-user-label"> Employer
+                                                            <input type="radio" class="reg-user-type" value="employer" name="user-type" id="employer">
+                                                       </label>
                                                   </div>
                                                   <div class="mb-4">
                                                        <div class="form-group">
-                                                            <input type="text" name="email" placeholder="Email address"
+                                                            <input type="password" name="password" placeholder="Password"
+                                                                 class="form-control">
+                                                       </div>
+                                                  </div>
+                                                  <div class="mb-4">
+                                                       <div class="form-group">
+                                                            <input type="password" name="password" placeholder="Confirm password"
                                                                  class="form-control">
                                                        </div>
                                                   </div>
                                                   <p class="terms-text">
                                                        <span>By creating an account, you acknowledge you have read and agree to our</span> <a href="privacy.html" target="_blank">Terms of use and Privacy Policy.</span>
                                                   </p>
-                                                  <a href="email-verification.html" class="btn auth-btn mt-4">Continue with Email</a>
+                                                  <a href="email-verification.html" class="btn auth-btn mt-4">Create Account</a>
                                              </div>
                                         </form>
-                                        <div style="padding: 30px; margin-bottom: 50px;">
-                                             <fieldset>
-                                                  <legend><span>&nbsp; or &nbsp;</span></legend>
-                                             </fieldset>
-                                             <button class="btn custom-btn-outline">
-                                                  <span>
-                                                  <img src="asset/img/google-icon.png" class="img-fluid">&nbsp; &nbsp; Continue with
-                                                  Google
-                                                  </span>
-                                             </button>
-                                             <div class="new-account-ctn"><span>Already have an account?</span> <a href="login.html">Login</a></div>
-                                        </div>
+                                        
                                    </div>
                               </div>
                               <div class="col-sm-2 col-md-3 col-lg-1 col-xl-2 col-1"></div>
@@ -150,6 +167,11 @@
                $('.crt-btn').on('click', function(){
                     $(this).parent('.reg-tab').fadeOut();
                     $(this).parent('.reg-tab').siblings('.reg-tab').delay(300).fadeIn();
+               });
+
+               $('.reg-user-label').on('click', function(){
+                    $('.reg-user-label').removeClass('active');
+                    $(this).addClass('active');
                });
           })
      </script>

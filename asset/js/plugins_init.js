@@ -1,7 +1,6 @@
 $(document).ready(function () {
 
   var screenWidth = window.innerWidth;
-  console.log(screenWidth);
 
   if ($(".testimonial-swiper").length > 0) {
 
@@ -19,6 +18,26 @@ $(document).ready(function () {
         1024: { slidesPerView: 3 }, 
         768: { slidesPerView: 2 }, 
         320: { slidesPerView: 1 } 
+      } 
+    });
+
+  }
+  if ($(".partner-swiper").length > 0) {
+
+    var t = new Swiper(".partner-swiper", 
+    { 
+      speed: 3e3, 
+      slidesPerView: 2, 
+      spaceBetween: 30, 
+      parallax: !0, 
+      centeredSlides: 0,
+      loop: !0, 
+      autoplay: { delay: 8e3 }, 
+      navigation: { nextEl: ".partner-next", prevEl: ".partner-prev" }, 
+      breakpoints: { 
+        1024: { slidesPerView: 5 }, 
+        576: { slidesPerView: 4 }, 
+        320: { slidesPerView: 3 } 
       } 
     });
 
