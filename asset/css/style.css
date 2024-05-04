@@ -936,6 +936,7 @@ footer .link-heading{
     color: var(--white-color);
     opacity: .8;
     font-size: 13px;
+    text-transform: capitalize;
 }
 
 footer .socials{
