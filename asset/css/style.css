@@ -1402,7 +1402,7 @@ section#wuan-container{
 .auth-bg img{
     width: auto;
     height: 100%;
-    filter: blur(2.5px);
+    /* filter: blur(2.5px); */
     z-index: 1;
 }
 
