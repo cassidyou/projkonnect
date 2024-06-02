@@ -824,11 +824,10 @@ footer .footer-logo img{
 }
 
 .footer-intro{
-    margin-top: 10px;
-    font-size: 24px;
+    margin-top: 0px;
+    font-size: 16px;
     line-height: 1.4;
     font-weight: 500;
-    word-spacing: 5px;
     font-family: var(--font-family-medium);
     color: var(--white-color);
 }
@@ -1227,14 +1226,14 @@ section#wuan-container{
 /******************************* CONTACT US  *****************************/
 .breadcrumb{
     position: relative;
-    height: 400px;
+    height: 210px;
     width: 100%;
     z-index: 1;
     background-color: var(--primary-color);
     
 }
 
-.breadcrumb::before,
+/* .breadcrumb::before,
 .breadcrumb::after
 {
     content: '';
@@ -1245,7 +1244,7 @@ section#wuan-container{
     opacity: 2;
     z-index: 2;
    
-}
+} */
 
 .breadcrumb::before {
         bottom: 0;
@@ -1261,7 +1260,7 @@ section#wuan-container{
 
   .breadcrumb-title{
     position: absolute;
-    top: 60%;
+    top: 70%;
     left: 50%;
     transform: translate(-50%, -30%);
     font-family: var(--font-family-medium);
@@ -1400,9 +1399,8 @@ section#wuan-container{
 }
 
 .auth-bg img{
-    width: auto;
-    height: 100%;
-    /* filter: blur(2.5px); */
+    width: 100%;
+    height: auto;
     z-index: 1;
 }
 
@@ -1412,6 +1410,23 @@ section#wuan-container{
     height: 100%;
     z-index: 10;
     background-color: rgba(0, 0, 0, 0.3);
+}
+
+.i-group-div{
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.i-group-div input{
+    border: 0!important;
+    background-color: transparent;
+}
+
+.i-group-div .input-group-text{
+ background-color: transparent;
+ border: none;
+ cursor: pointer;
+ opacity: .5;
 }
 
 .auth-ctn{
