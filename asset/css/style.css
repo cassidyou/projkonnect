@@ -1880,3 +1880,40 @@ button.plyr__control.plyr__control--overlaid
     font-size: 30px;
     border-bottom: 1px solid black;
 }
+
+.pricing-toggler{
+    margin-top: 60px;
+    /* margin-bottom: 30px; */
+}
+
+.pricing-toggler label{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.pricing-toggler .form-switch .form-check-input {
+    width: 3em;
+    height: 1.2em;
+    cursor: pointer;
+
+}
+
+.pricing-toggler .form-check-input {
+    background-color: var(--orange-color);
+    border-color: var(--orange-color);
+}
+
+.pricing-toggler .form-switch .form-check-input:checked {
+    background-position: right center;
+    --bs-form-switch-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e");
+}
+
+.pricing-toggler .form-check-input {
+    background-position: left center;
+    --bs-form-check-bg-image:  url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e");
+    --bs-form-switch-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e");
+}
+
+.pricing-toggler .form-switch .form-check-input:focus {
+    --bs-form-switch-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e");
+}

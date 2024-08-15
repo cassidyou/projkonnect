@@ -89,11 +89,18 @@
                     <section id="pricing">
                          <div class="container">
                               <h1 class="text-center">Explore a range of our service plans tailored to give you the best educational experience</h1>
+                              <div class="d-flex align-items-center justify-content-center gap-3 pricing-toggler">
+                                   <label>Monthly</label>
+                                   <div class="form-check form-switch d-flex align-items-center gap-3">
+                                        <input type="checkbox" name="" id="flexSwitchDefault" class="form-check-input">
+                                        <label class="form-check-label" for="flexSwitchDefault">Yearly</label>
+                                   </div>
+                              </div>
                               <div class="row mt-5 justify-content-center">
                                    <div class="col-md-6 col-lg-4 mb-4">
                                         <div class="card plan-card">
                                              <p class="plan-type"> <img src="asset/img/free_tier.png" alt="">Free Tier</p>
-                                             <h2 class="plan-amount">$0 /mo</h2>
+                                             <h2 class="plan-amount">$0/month</h2>
                                              <h6 class="period">Billed yearly. <span>Pay monthly</span></h6>
                                              <a href="register.html" class="orange-btn">Choose Plan</a>
                                              <small>Includes</small>
@@ -110,7 +117,7 @@
                                    <div class="col-md-6 col-lg-4 mb-4">
                                         <div class="card plan-card">
                                              <p class="plan-type"><img src="asset/img/premium_tier.png" alt="">Premium Tier</p>
-                                             <h2 class="plan-amount">$22 /mo</h2>
+                                             <h2 class="plan-amount" id="premium-container">$22 /mo</h2>
                                              <h6 class="period">Billed yearly. <span>Pay monthly</span></h6>
                                              <a href="register.html" class="orange-btn">Choose Plan</a>
                                              <small>Includes</small>
@@ -127,7 +134,7 @@
                                    <div class="col-md-6 col-lg-4 mb-4">
                                         <div class="card plan-card">
                                              <p class="plan-type"><img src="asset/img/premium_plus_tier.png" alt=""> Premium Plus Tier</p>
-                                             <h2 class="plan-amount">$60 /mo</h2>
+                                             <h2 class="plan-amount" id="premium-plus-container">$60 /mo</h2>
                                              <h6 class="period">Billed yearly. <span>Pay monthly</span></h6>
                                              <a href="register.html" class="orange-btn">Choose Plan</a>
                                              <small>Includes</small>
@@ -437,6 +444,36 @@
      <script src="asset/js/aos.js"></script>
      <script src="asset/js/plugins_init.js"></script>
      <script src="asset/js/main.js"></script>
+     <script>
+          $(document).ready(function(){
+               var premium_monthly_plan = 22;
+               var premium_yearly_plan = 22 * 12;
+               var premium_plus_monthly_plan = 60; 
+               var premium_plus_yearly_plan = 60 * 12; 
+
+               let premium_container = $("#premium-container");
+               let premium_plus_container = $("#premium-plus-container");
+
+               premium_container.text(`$${premium_monthly_plan}/month`)
+               premium_plus_container.text(`$${premium_plus_monthly_plan}/month`)
+
+
+
+               $(".pricing-toggler").find('.form-check.form-switch').on("click", function(){
+                    let isChecked = $(this).find('#flexSwitchDefault').is(":checked");
+                    
+                    if(isChecked){
+                         premium_container.text(`$${premium_yearly_plan}/year`)
+                         premium_plus_container.text(`$${premium_plus_yearly_plan}/year`)
+                    }else{
+                         premium_container.text(`$${premium_monthly_plan}/month`)
+                         premium_plus_container.text(`$${premium_plus_monthly_plan}/month`)
+                    }
+
+               })
+               
+          })
+     </script>
 
 </body>
 
