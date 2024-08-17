@@ -1198,9 +1198,61 @@ section#wuan-container{
 }
 
 .team-img{
-    height: 230px;
+    height: 165px;
     overflow: hidden;
-    background-color: rgb(214, 214, 214);
+}
+
+.team-img img{
+    width: 100%;
+}
+
+@media (max-width: 1024px)
+{
+    .team-img{
+        height: 135px;
+    }
+}
+
+@media (max-width: 991px)
+{
+    .team-img{
+        height: 215px;
+    }
+}
+
+@media (max-width: 576px)
+{
+    .team-img{
+        height: 245px;
+    }
+}
+
+@media (max-width: 425px)
+{
+    .team-img{
+        height: 400px;
+    }
+}
+
+@media (max-width: 375px)
+{
+    .team-img{
+        height: 350px;
+    }
+}
+
+@media (max-width: 320px)
+{
+    .team-img{
+        height: 290px;
+    }
+}
+
+@media (max-width: 319px)
+{
+    .team-img{
+        height: 250px;
+    }
 }
 
 .team-name{
