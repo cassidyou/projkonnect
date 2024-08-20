@@ -170,6 +170,11 @@
           float: right;
       }
 
+      .breadcrumb-title{
+        font-size: 30px;
+        width: 100%;
+        text-align: center;
+   }
 
 }
 
@@ -342,7 +347,9 @@
       }
 
       .breadcrumb-title{
-          font-size: 35px;
+          font-size: 30px;
+          width: 100%;
+          text-align: center;
      }
 
      .btn-inq{

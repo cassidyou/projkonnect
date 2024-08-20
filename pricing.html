@@ -88,7 +88,7 @@
                <div class="container">
                     <section id="pricing">
                          <div class="container">
-                              <h1 class="text-center">Explore a range of our service plans tailored to give you the best educational experience</h1>
+                              <h1 class="intro text-center">Explore a range of our service plans tailored to give you the best educational experience</h1>
                               <div class="d-flex align-items-center justify-content-center gap-3 pricing-toggler">
                                    <label>Monthly</label>
                                    <div class="form-check form-switch d-flex align-items-center gap-3">
@@ -100,7 +100,7 @@
                                    <div class="col-md-6 col-lg-4 mb-4">
                                         <div class="card plan-card">
                                              <p class="plan-type"> <img src="asset/img/free_tier.png" alt="">Free Tier</p>
-                                             <h2 class="plan-amount">$0/month</h2>
+                                             <h2 class="plan-amount" id="free-container">$0/month</h2>
                                              <h6 class="period">Billed yearly. <span>Pay monthly</span></h6>
                                              <a href="register.html" class="orange-btn">Choose Plan</a>
                                              <small>Includes</small>
@@ -453,9 +453,11 @@
 
                let premium_container = $("#premium-container");
                let premium_plus_container = $("#premium-plus-container");
+               let free_container = $('#free-container');
 
                premium_container.text(`$${premium_monthly_plan}/month`)
                premium_plus_container.text(`$${premium_plus_monthly_plan}/month`)
+               free_container.text('$0/month');
 
 
 
@@ -465,9 +467,11 @@
                     if(isChecked){
                          premium_container.text(`$${premium_yearly_plan}/year`)
                          premium_plus_container.text(`$${premium_plus_yearly_plan}/year`)
+                         free_container.text('$0/year');
                     }else{
                          premium_container.text(`$${premium_monthly_plan}/month`)
                          premium_plus_container.text(`$${premium_plus_monthly_plan}/month`)
+                         free_container.text('$0/month');
                     }
 
                })
